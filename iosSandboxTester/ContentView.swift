@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct buttonPressEffect: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
@@ -29,6 +30,7 @@ func getDocumentDirectoryPath() -> URL {
 
 struct ContentView: View {
     @State private var isPressed: Bool = false
+    @State private var selectedItem: PhotosPickerItem? = nil
     
     var body: some View {
         VStack {
@@ -43,7 +45,13 @@ struct ContentView: View {
                 print(docDirPath)
                 
             }, label: {
-                Text("選擇新照片")
+                PhotosPicker(
+                    selection: $selectedItem,
+                    photoLibrary: .shared(),
+                    label: {
+                        Text("選擇照片")
+                    }
+                )
             }).buttonStyle(buttonPressEffect())
         }
         .fontWeight(.bold)

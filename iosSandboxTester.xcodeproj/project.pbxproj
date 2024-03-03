@@ -44,6 +44,7 @@
 		90B92BFB2B94C71300CECF37 /* iosSandboxTesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosSandboxTesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B92BFF2B94C71300CECF37 /* iosSandboxTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosSandboxTesterUITests.swift; sourceTree = "<group>"; };
 		90B92C012B94C71300CECF37 /* iosSandboxTesterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosSandboxTesterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		90B92C0E2B94D62000CECF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		90B92BF42B94C71300CECF37 /* iosSandboxTesterTests */ = {
 			isa = PBXGroup;
 			children = (
+				90B92C0E2B94D62000CECF37 /* Info.plist */,
 				90B92BF52B94C71300CECF37 /* iosSandboxTesterTests.swift */,
 			);
 			path = iosSandboxTesterTests;
@@ -483,7 +485,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FABR29VF3A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_FILE = iosSandboxTesterTests/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "取用相簿以開始體驗";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "取用相簿以開始體驗";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.t2o0n321.iosSandboxTesterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,7 +508,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FABR29VF3A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_FILE = iosSandboxTesterTests/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "取用相簿以開始體驗";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "取用相簿以開始體驗";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.t2o0n321.iosSandboxTesterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
